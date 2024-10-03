@@ -1,3 +1,4 @@
+//SpinningModel.jsx
 import React, { Suspense, useRef, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, Html } from '@react-three/drei';
@@ -25,7 +26,7 @@ function NaviModel() {
 export default function App() {
   return (
     <Canvas camera={{ position: [4, 3, 25], fov: 30 }}>
-      <ambientLight intensity={0.5} />
+      <ambientLight intensity={1.5} />
       <pointLight position={[10, 10, 10]} />
       <Suspense
         fallback={
